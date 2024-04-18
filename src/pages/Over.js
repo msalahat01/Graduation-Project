@@ -183,12 +183,12 @@ for (let i = 0; i < listRating.length; i++ ) {
   return (
     <>
       <Row>
-        <Col span={8}>
+        <Col span={12}>
           <Card
             size="small"
             style={{
               width: 480,
-              margin: "60px 10px 0px -70px",
+              margin: "60px 10px 0px 20px",
               background: "#EB5E28 ",
               color: "white",
               border: "3px solid #FFFCF2",
@@ -230,7 +230,7 @@ for (let i = 0; i < listRating.length; i++ ) {
             style={{
               maxHeight: 420,
               width: 480,
-              margin: "10px 0px 0px -70px",
+              margin: "10px 0px 0px 20px",
               background: "#EB5E28 ",
               color: "white",
               border: "3px solid #FFFCF2",
@@ -312,7 +312,7 @@ for (let i = 0; i < listRating.length; i++ ) {
 
 
 
-        <Col span={9}>
+        <Col span={11}>
 <Row>
         <Card
               bordered={false}

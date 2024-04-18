@@ -32,7 +32,7 @@ const Traniess = () => {
   const CardStyle = {
     width:250,
     borderRadius:"40px",
-    height: "200px" ,
+    height: "180px" ,
     fontFamily: "Arial, sans-serif",
     fontWeight:"bold",
   };
@@ -42,8 +42,8 @@ const Traniess = () => {
     "https://i.ibb.co/x2fDwRf/user2.jpg",
     "https://i.ibb.co/GTZhw7N/user4.jpg",
     "https://i.ibb.co/rmMn8r6/user5.jpg",
-    "https://i.ibb.co/tCQMbgy/nut1.jpg",
-    "https://i.ibb.co/KskqSPH/nut2.jpg"
+    "https://i.ibb.co/HPfgzPF/user1.jpg"
+    
   ];
 
   const mappedObject = {};
@@ -123,14 +123,14 @@ photoArray.map((photo, index) => {
 
 
   return (
-    <div style={{position:"absolute", width:"1100px" , height:"720px"}}>
-       <Card  style={{...CardStyle,background:"#D9D9D9", border: "2px solid #D9D9D9" ,position:"absolute",left:"38%",top:"5%"}}>
+    <div style={{position:"absolute", width:"1200px" , height:"720px" , marginLeft:"70px"}}>
+       <Card  style={{...CardStyle,background:"#D9D9D9", border: "2px solid #D9D9D9" ,position:"absolute",left:"38%",top:"4%"}}>
          <p style={{fontSize:"40px" , color:"#2C3E50"}}>{numberOfActive} </p>
          
          <p style={{fontSize:"16px" , color:"#2C3E50"}}> <br/>Trainess</p>
        </Card>
 
-       <Card style={{...CardStyle, background:"#2C3E50" ,border: "2px solid #2C3E50" ,position:"absolute", left:"67%",top:"5%"}}>
+       <Card style={{...CardStyle, background:"#2C3E50" ,border: "2px solid #2C3E50" ,position:"absolute", left:"65%",top:"4%"}}>
        <p style={{fontSize:"40px" , color:"white"}}> {Maxnumber} </p>
    <br/>
        <p style={{fontSize:"16px" , color:"white"}}> Limit Trainess</p>
@@ -138,9 +138,9 @@ photoArray.map((photo, index) => {
 
 
 
-  <div style={{position:"absolute", top:"280px" , left:"38%"  }}>
+  <div style={{position:"absolute", top:"240px" , left:"38%"  }}>
 
-  <Card  style={{width:"580px",height:"400px", border: "2px solid #D9D9D9", borderRadius:"40px", 
+  <Card  style={{width:"580px",height:"380px", border: "2px solid #D9D9D9", borderRadius:"40px", 
        background:"#EB5E28 " ,border: "2px solid #1ABC9C",  position: "relative", }}>
          
   
@@ -185,12 +185,12 @@ photoArray.map((photo, index) => {
 </Card>
   </div>
 
-<div style={{position:"absolute", top:"35px" , left:"-10%"  }}>
+<div style={{position:"absolute", top:"3%" , left:"-10%"  }}>
 
   <Card
             size="small"
             style={{
-              height: 650,
+              height: 600,
               width: 500,
               background: "#EB5E28 ",
               color: "white",
@@ -205,9 +205,9 @@ photoArray.map((photo, index) => {
 
             <Scrollbars
               autoHide
-              autoHideTimeout={1000}
+              autoHideTimeout={1200}
               autoHideDuration={200}
-              style={{ height: 555 , marginTop:"60px"}}
+              style={{ height: 500 , marginTop:"60px"}}
             >
               
               <List  style={{position:"absolute" ,top:"4%" }}

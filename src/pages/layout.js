@@ -18,9 +18,10 @@ const contentStyle = {
   minHeight: '100',
   lineHeight: '80px',
   marginLeft:"0%",
-  paddingLeft:"10%",
+  paddingLeft:"2%",
   color: '#000000',
   backgroundColor: '#FFFCF2',
+  width: "1200px"
 };
 
 

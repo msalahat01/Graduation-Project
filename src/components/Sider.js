@@ -69,7 +69,7 @@ function Sider() {
     height:"40px",
     fontWeight:700,
     left : 125 , 
-    top : 790,
+    top : "86%",
     position:"absolute"
   }
   
@@ -82,7 +82,7 @@ function Sider() {
         display: 'flex',
         flexDirection: 'column',
         width:'440px' ,
-        height:'940px'
+        height:'825px'
     }
   }
   const navigate = useNavigate();
