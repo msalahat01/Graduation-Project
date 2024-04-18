@@ -7,7 +7,7 @@ function Partners() {
           <Carousel.Item>
             <img
             className="-block w-100px" 
-              src={require('/home/al-salahat/Downloads/project/src/image/Coach.png')} alt="Black"
+              src={require('../image/Coach.png')} alt="Black"
             />
             <Carousel.Caption >
               <h5 >Coach</h5>
@@ -17,7 +17,7 @@ function Partners() {
           <Carousel.Item>
             <img
             className="-block w-100px" 
-             src={require('/home/al-salahat/Downloads/project/src/image/Nutrition.jpg')} alt="Black"
+             src={require('../image/Nutrition.jpg')} alt="Black"
             />
             <Carousel.Caption  >
               <h5>Nutrition</h5>
@@ -27,7 +27,7 @@ function Partners() {
           <Carousel.Item>
             <img
             className="-block w-100px " 
-               src={require('/home/al-salahat/Downloads/project/src/image/emptygym.jpeg')} alt="Black"
+               src={require('../image/emptygym.jpeg')} alt="Black"
             />
             <Carousel.Caption >
               <h5>GYM</h5>

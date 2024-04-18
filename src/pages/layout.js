@@ -1,7 +1,6 @@
 import { Layout  } from 'antd';
 import Sider from '../components/Sider';
 import Overtrain from './Overtrain';
-import { auth } from '../firebase';
 import { FaFacebook ,FaTwitter , FaWhatsapp } from "react-icons/fa";
 
 
@@ -46,7 +45,7 @@ const year = new Date().getFullYear();
 const page={
   backgroundColor: "#FFFFFF",
   height: "1200px",
-   width: "1920px",
+   width: "100%",
 
 }
 
@@ -61,7 +60,7 @@ function Overlayout(){
   <Layout  style={{width: '100%'}}>
     <Layout>   
      <Header style={headerStyle}>
-     <img src={require("/home/al-salahat/Downloads/project/src/image/12.png")} style={logoStyle} ></img>
+     <img src={require("../image/12.png")} style={logoStyle} ></img>
      </Header>
       <Content style={contentStyle}>
            <Overtrain/>  

@@ -1,15 +1,11 @@
-import React, { Component , useState } from 'react';
-import ReactDOM from 'react-dom';
-import Container from 'react-bootstrap/Container';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Partners from '../components/Partners';
 import Contactus from '../components/Contactus';
 import Row from 'react-bootstrap/Row';
-import Form from 'react-bootstrap/Form';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-import { hover } from "@testing-library/user-event/dist/hover";
-import { FaBorderNone, FaFacebook ,FaTwitter , FaWhatsapp } from "react-icons/fa";
+import { FaFacebook ,FaTwitter , FaWhatsapp } from "react-icons/fa";
 import NavBar from '../components/NavBar';
 
 
@@ -39,7 +35,7 @@ export const Home = () => {
     <Row>
 
         <Col>
-            <img src={require("/home/al-salahat/Downloads/project/src/image/gym.jpg")}
+            <img src={require("../image/gym.jpg")}
             width={740} height={740} alt="gym" className="imggym"/> 
         </Col>
 
@@ -80,7 +76,7 @@ export const Home = () => {
 
 
       <Col>
-            <img src={require("/home/al-salahat/Downloads/project/src/image/smatgym.jpg")}
+            <img src={require("../image/smatgym.jpg")}
             width={700} height={600} alt="gym1" className="smartgym"/> 
         </Col>
 
@@ -101,7 +97,7 @@ export const Home = () => {
       <hr className="lin1"></hr>
 
       <Col>
-            <img src={require("/home/al-salahat/Downloads/project/src/image/software-developer.jpg")}
+            <img src={require("../image/software-developer.jpg")}
             width={700} height={600} alt="gym2" className="smartdev"/> 
         </Col>
 

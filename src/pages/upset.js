@@ -6,7 +6,7 @@ import Editpass from './editpass';
 const tabBarStyle = {
   fontWeight: 560,
   color: '#2C3E50',
-  width: '1200px'
+  width: '1000px'
 }
 
 const onChange = (key) => {

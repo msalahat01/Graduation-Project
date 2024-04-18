@@ -2,9 +2,9 @@ import React from 'react'
 import { ScheduleOutlined} from '@ant-design/icons';
 import { Space } from 'antd';
 import { useState,useEffect } from 'react';
-import { doc,getDoc,setDoc,updateDoc } from 'firebase/firestore';
+import { doc,getDoc,updateDoc } from 'firebase/firestore';
 import { db ,auth} from '../firebase';
-import { Form, Input, Button, Upload, message, Col , Row  , Card, Avatar} from 'antd';
+import { Form, Button, Col , Row ,Card} from 'antd';
 
 
 const CardStyle = {
@@ -155,12 +155,12 @@ function Upgrade(){
       </Card>
       </Space>
 </Space>    
-    <div style={{ padding: "20px 0px 0px 0px " , marginTop: '100px',marginLeft:"160px"}}>
+    <div style={{ padding: "20px 0px 0px 0px " , marginTop: '100px',marginLeft:"150px"}}>
       <Row gutter={19}>
         <Col span={6} >
 
         <Card size="small" 
-        style={{width:235,height:"400px",margin:"10px 0px 0px -40px" ,background:"#D9D9D9" , color:"white",border: "3px solid #D9D9D9",borderRadius:"39px"}}>
+        style={{width:235,height:"400px",margin:"10px 0px 0px -75px" ,background:"#D9D9D9" , color:"white",border: "3px solid #D9D9D9",borderRadius:"39px"}}>
         <h1 style={{color:"#000000" ,fontfamily:"Arial",fontWeight:"700"}}>Plan 1</h1>
         <p style={{color: "#000000", marginbottom:"8px" ,fontfamily: "Arial",fontsize:10}}>
         Ideal for individual trainers or small gyms starting their fitness journey.

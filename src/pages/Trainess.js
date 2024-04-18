@@ -1,22 +1,14 @@
 import React from 'react'
 import { useEffect, useState } from "react";
-import { Card, Col, Row } from 'antd';
-import { UserOutlined } from '@ant-design/icons';
-import { Avatar, Space ,Button, List, Skeleton, message } from 'antd';
-import { CaretLeftOutlined , CaretRightOutlined, LockOutlined  } from '@ant-design/icons';
+import { Card } from 'antd';
+import { Avatar, Space ,Button, List, Skeleton } from 'antd';
 import { db, auth } from "../firebase";
 import {
-  updateDoc,
   doc,
-  arrayUnion,
-  getDoc,
-  arrayRemove,setDoc
+  getDoc
 } from "firebase/firestore";
 import { Scrollbars } from "react-custom-scrollbars";
-import {DollarOutlined , PhoneOutlined, MailOutlined, UserAddOutlined, InfoCircleOutlined  } from '@ant-design/icons';
 import { Input } from "antd";
-
-
 
 
 
@@ -38,7 +30,7 @@ const Traniess = () => {
   
 
   const CardStyle = {
-    width:300,
+    width:250,
     borderRadius:"40px",
     height: "200px" ,
     fontFamily: "Arial, sans-serif",
@@ -131,14 +123,14 @@ photoArray.map((photo, index) => {
 
 
   return (
-    <div style={{position:"absolute", width:"1200px" , height:"720px"}}>
-       <Card  style={{...CardStyle,background:"#D9D9D9", border: "2px solid #D9D9D9" ,position:"absolute",left:"40%",top:"5%"}}>
+    <div style={{position:"absolute", width:"1100px" , height:"720px"}}>
+       <Card  style={{...CardStyle,background:"#D9D9D9", border: "2px solid #D9D9D9" ,position:"absolute",left:"38%",top:"5%"}}>
          <p style={{fontSize:"40px" , color:"#2C3E50"}}>{numberOfActive} </p>
          
          <p style={{fontSize:"16px" , color:"#2C3E50"}}> <br/>Trainess</p>
        </Card>
 
-       <Card style={{...CardStyle, background:"#2C3E50" ,border: "2px solid #2C3E50" ,position:"absolute", left:"71%",top:"5%"}}>
+       <Card style={{...CardStyle, background:"#2C3E50" ,border: "2px solid #2C3E50" ,position:"absolute", left:"67%",top:"5%"}}>
        <p style={{fontSize:"40px" , color:"white"}}> {Maxnumber} </p>
    <br/>
        <p style={{fontSize:"16px" , color:"white"}}> Limit Trainess</p>
@@ -146,13 +138,13 @@ photoArray.map((photo, index) => {
 
 
 
-  <div style={{position:"absolute", top:"280px" , left:"40%"  }}>
+  <div style={{position:"absolute", top:"280px" , left:"38%"  }}>
 
-  <Card  style={{width:"680px",height:"400px", border: "2px solid #D9D9D9", borderRadius:"40px", 
+  <Card  style={{width:"580px",height:"400px", border: "2px solid #D9D9D9", borderRadius:"40px", 
        background:"#EB5E28 " ,border: "2px solid #1ABC9C",  position: "relative", }}>
          
   
-            <Card  style={{width:"600px",height:"100px", borderRadius:"40px", left:"5%", background:"#2C3E50 " ,border: "2px solid #2C3E50",position: "absolute"}}>
+            <Card  style={{width:"520px",height:"100px", borderRadius:"40px", left:"5%", background:"#2C3E50 " ,border: "2px solid #2C3E50",position: "absolute"}}>
               <p style={{position: "absolute" ,left:"18%",top:"34%", fontSize:"20px", color:" #D9D9D9 "}}>{selectedItem}</p> 
                   
             <Avatar  style={{
@@ -165,7 +157,7 @@ photoArray.map((photo, index) => {
       </Card> 
 
       <TextArea
-              rows={6}
+              rows={5}
               style={{
                 position: "absolute",
                 borderRadius: "40px",
@@ -174,7 +166,7 @@ photoArray.map((photo, index) => {
                 backgroundColor: "#D9D9D9",
                 textIndent: "30px",
                 fontSize: "16px",
-                width:"600px"
+                width:"520px"
               }}
               autoFocus={false}
             />

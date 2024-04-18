@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
-import ReactDOM from 'react-dom';import Row from 'react-bootstrap/Row';
 import Form from 'react-bootstrap/Form';
-import { FaBorderNone, FaFacebook ,FaTwitter , FaWhatsapp } from "react-icons/fa";
+import { FaFacebook ,FaTwitter , FaWhatsapp } from "react-icons/fa";
 import { CContainer } from '@coreui/react'
 import { db } from '../firebase';
 import { auth } from '../firebase';
-import { Firestore } from 'firebase/firestore';
-import { doc,addDoc, collection,setDoc,updateDoc,getDoc } from 'firebase/firestore';
+import { doc,setDoc } from 'firebase/firestore';
 import Button from 'react-bootstrap/Button';
 import { CRow } from '@coreui/react'
 import NavBar from '../components/NavBar';
@@ -22,8 +20,8 @@ export const Joinus1 = () => {
   const page={
     backgroundColor: "#FFFCF2",
      height: "1250px",
-      width: "1920px",
-} 
+     width: "100%",
+    } 
 
 const foot={
   background: "#252422" ,
@@ -125,43 +123,43 @@ if(name && email && phone && password && cpassword !== "" && cheek == true)
           height: "68%" , left: "0%" , top:"9%"}}></div>
 
            <div style={{...box ,boxShadow: "2px 2px 5px black" ,  position: 'absolute' , borderRadius: "50px" }}></div>
-           <h1 style={{color: "#FFFFFF" , position: 'absolute' , width: "25%" , left: '37.5%' , top: '165px',fontSize:"38px"}}>Register For Organization</h1>
+           <h1 style={{color: "#FFFFFF" , position: 'absolute' , width: "26%" , left: '37%' , top: '165px',fontSize:"38px"}}>Register For Organization</h1>
 
 
            <Form id='form1' style={{color:"#FFFFFF" , position: 'absolute' , left:'36.5%', top : '20%' }}>
                 
               <Form.Group className="mb-3" controlId="formGridName">
                 <Form.Label style={{marginLeft: "-475px"}} >Name</Form.Label>
-                <Form.Control style={{ fontSize: "80%",width:"520px"}} value={name} onChange={(e)=> setName(e.target.value)} type="text" placeholder="Enter name Organization" />
+                <Form.Control style={{ fontSize: "80%",width:"440px"}} value={name} onChange={(e)=> setName(e.target.value)} type="text" placeholder="Enter name Organization" />
               </Form.Group> 
 
               <Form.Group className="mb-3" controlId="formGridEmail">
                 <Form.Label style={{marginLeft: "-475px"}} >Email</Form.Label>
-                <Form.Control style={{ fontSize: "80%",width:"520px"}}  value={email}  type="email" onChange={(e)=> setEmail(e.target.value)} placeholder="Enter email" />
+                <Form.Control style={{ fontSize: "80%",width:"440px"}}  value={email}  type="email" onChange={(e)=> setEmail(e.target.value)} placeholder="Enter email" />
                     </Form.Group>
                   
                   <Form.Group className="mb-3" controlId="formGridPassword">
                     <Form.Label style={{marginRight: "440px"}} >Password</Form.Label>
-                    <Form.Control style={{ fontSize: "80%",width:"520px"}}  value={password} type='password'  onChange={(e)=> setPassword(e.target.value)} placeholder="Enter Password" />
+                    <Form.Control style={{ fontSize: "80%",width:"440px"}}  value={password} type='password'  onChange={(e)=> setPassword(e.target.value)} placeholder="Enter Password" />
                   </Form.Group>
 
                   <Form.Group className="mb-3" controlId="formGridCPassword">
                     <Form.Label style={{marginRight: "350px"}} >Confirm Password</Form.Label>
-                    <Form.Control style={{ fontSize: "80%",width:"520px"}} value={cpassword}  onChange={(e)=> setCpassword(e.target.value)} type='password' rows={3} placeholder="Repeat Password" />
+                    <Form.Control style={{ fontSize: "80%",width:"440px"}} value={cpassword}  onChange={(e)=> setCpassword(e.target.value)} type='password' rows={3} placeholder="Repeat Password" />
                   </Form.Group>
 
                   <Form.Group className="mb-4" controlId="formGridPhone">
                     <Form.Label style={{marginRight: "475px"}} >Phone</Form.Label>
-                    <Form.Control style={{ fontSize: "80%",width:"520px"}}  value={phone}  onChange={(e)=> setPhone(e.target.value)} type='Phone' rows={3} placeholder="Enter Phone Number" />
+                    <Form.Control style={{ fontSize: "80%",width:"440px"}}  value={phone}  onChange={(e)=> setPhone(e.target.value)} type='Phone' rows={3} placeholder="Enter Phone Number" />
                   </Form.Group>
 
-                  <Form.Group   style={{ fontSize: "90%",width:"550px"}}className="mb-3" controlId="formBasicCheckbox"  >
+                  <Form.Group   style={{ fontSize: "80%",width:"460px"}}className="mb-3" controlId="formBasicCheckbox"  >
                     <Form.Check    type="checkbox" id='cheekbox1' checked={cheek} onChange={(e)=> setCheek(e.target.checked)} label="I agree to the Terms of Service and Privacy Policy." />
                   </Form.Group>
 
                 <Form.Group style={{textAlign:"center"}}>
                   <Button  id='submit1' type="submit" onClick={onSubmit} size='lg' style={{backgroundColor :"#EB5E28", color:"#FFFFFF" , textAlign:"center" ,
-                   position: 'absolute' , top: "105%" , left:"40%"}}>
+                   position: 'absolute' , top: "108%" , left:"30%"}}>
                     Submit
                   </Button>
                   </Form.Group>

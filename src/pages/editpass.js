@@ -1,8 +1,7 @@
-import React, { useState ,useEffect} from 'react';
-import { Form, Input, Button, Upload, message, Col , Row  , Avatar} from 'antd';
-import {DollarOutlined , UserOutlined, LockOutlined, PhoneOutlined, MailOutlined, UserAddOutlined, InfoCircleOutlined  } from '@ant-design/icons';
-import { db,auth } from '../firebase';
-import { doc,getDoc,setDoc,updateDoc }  from 'firebase/firestore';
+import React, { useState } from 'react';
+import { Form, Input, Button} from 'antd';
+import {LockOutlined } from '@ant-design/icons';
+import { auth } from '../firebase';
 import { updatePassword } from "firebase/auth";
 
 
@@ -43,7 +42,7 @@ import { updatePassword } from "firebase/auth";
   return (
 
 
- <Form form={form} layout="inline" style={{position:"relative" ,width:"440px",height:"360px",left:"24%",top:"150px",background:"#EB5E28",opacity:"0.8",borderRadius:"40px"}}>
+ <Form form={form} layout="inline" style={{position:"relative" ,width:"440px",height:"360px",left:"20%",top:"140px",background:"#EB5E28",opacity:"0.8",borderRadius:"40px"}}>
 <div style={{position:'absolute',color:"black",fontSize:"30px",fontWeight:'bold',top:"4%",left:"23%"}}>Update Password</div>
 <div style={{position:'absolute',color:"black",fontSize:"12px",top:"28%",fontWeight:'bold',left:"15.5%"}}>password</div>
 

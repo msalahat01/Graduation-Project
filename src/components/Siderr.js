@@ -1,8 +1,7 @@
-import { UserOutlined } from '@ant-design/icons';
 import { Avatar, Space } from 'antd';
 import { Card , Button } from 'antd';
 import {db,auth} from "../firebase";
-import { doc,addDoc, collection,setDoc,updateDoc,getDoc, and } from 'firebase/firestore';
+import { doc, getDoc } from 'firebase/firestore';
 import { useState } from 'react';
 import { signOut } from 'firebase/auth';
 import {  useNavigate } from 'react-router-dom';

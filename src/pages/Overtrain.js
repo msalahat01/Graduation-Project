@@ -7,9 +7,9 @@ const onChange = (key) => {
 };
 
 const tabBarStyle = {
-  fontWeight: 660,
+  fontWeight: 600,
   color: '#2C3E50',
-  width: '1200px'
+  width: '1000px'
 }
 
 const items = [

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink , Link } from "react-router-dom";
+import { NavLink  } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
 import "./NavBar.css";
 
@@ -22,7 +22,7 @@ function NavBar() {
         <div className="nav-container">
 
           <NavLink exact to="/" className="nav-logo" onClick={scrollToTop}>  
-            <img src={require("/home/al-salahat/Downloads/project/src/image/12.png")}
+            <img src={require("../image/12.png")}
             width={150} height={72} alt="logo"/>
 
           </NavLink>

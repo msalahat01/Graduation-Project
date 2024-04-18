@@ -19,7 +19,7 @@ export const Signin = () => {
   const page={
     backgroundColor: "#FFFCF2",
      height: "1200px",
-      width: "1920px",
+      width: "100%",
 } 
 
 const foot={

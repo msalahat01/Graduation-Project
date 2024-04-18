@@ -1,10 +1,9 @@
 import React, { useState ,useEffect} from 'react';
-import { Form, Input, Button, Upload, message, Col , Row  , Avatar} from 'antd';
-import {DollarOutlined , UserOutlined, LockOutlined, PhoneOutlined, MailOutlined, UserAddOutlined, InfoCircleOutlined  } from '@ant-design/icons';
+import { Form, Input, Button, Col , Row  , Avatar} from 'antd';
+import {DollarOutlined , UserOutlined, LockOutlined, PhoneOutlined, InfoCircleOutlined  } from '@ant-design/icons';
 import { db,auth,storage} from '../firebase';
-import { getStorage, ref , uploadBytesResumable ,getDownloadURL} from "firebase/storage";
-import { doc,getDoc,setDoc,updateDoc } from 'firebase/firestore';
-import { Radio } from 'antd';
+import { ref , uploadBytesResumable ,getDownloadURL} from "firebase/storage";
+import { doc,getDoc,updateDoc } from 'firebase/firestore';
 
 
 const Personal = () => {
@@ -188,7 +187,7 @@ const Personal = () => {
       <Form.Item  
       name="Img"
       rules={[{ required: false, message: 'Please enter your photo' }]}>
-         <div style = {{margin: '0 0 0 460px' , backgroundColor:'#FFFCF2' , }}>
+         <div style = {{margin: '0 0 0 400px' , backgroundColor:'#FFFCF2' , }}>
 
         <label for='input-file' style={{display:"block",borderRadius:"90%",width:"190px",padding:"5px",margin:"auto",cursor:"pointer", background: editMode?"#EB5E28":"#D1D1D1"}}>
         <Avatar id='profilePic' size={170} src={form.getFieldValue("Img")} text="Username" style={{backgroundColor:"#D9D9D9"}}/>
@@ -209,7 +208,7 @@ const Personal = () => {
          placeholder="Name" 
          onChange={handleChange}
          value={info.Name}
-         style={{width:600,margin:"0px 100px 0px 240px" ,
+         style={{width:600,margin:"0px 100px 0px 180px" ,
          borderRadius:"40px" , color :'black' , fii: "#D9D9D9",backgroundColor :"#D9D9D9"}}
          disabled={!editMode}  />
       </Form.Item> 
@@ -222,7 +221,7 @@ const Personal = () => {
          placeholder="Location" 
          onChange={handleChange}
          value={info.Location}
-         style={{width:600,margin:"0px 100px 0px 240px" ,
+         style={{width:600,margin:"0px 100px 0px 180px" ,
          borderRadius:"40px" , color :'black' , fii: "#D9D9D9",backgroundColor :"#D9D9D9"}}
          disabled={!editMode}  />
       </Form.Item> 
@@ -235,7 +234,7 @@ const Personal = () => {
          value={info.Phone}
          onChange={handleChange}
 
-        style={{width:600,margin:"0px 100px 0px 240px" ,border: "3px solid #FFFCF2",borderRadius:"40px" , backgroundColor :"#D9D9D9" , color :'black'}} 
+        style={{width:600,margin:"0px 100px 0px 180px" ,border: "3px solid #FFFCF2",borderRadius:"40px" , backgroundColor :"#D9D9D9" , color :'black'}} 
         disabled={!editMode} />
       </Form.Item>
 
@@ -247,7 +246,7 @@ const Personal = () => {
          placeholder="Open time eg. 10:00 AM - 12:00 PM" 
          onChange={handleChange}
          value={info.openDefault}
-         style={{width:600,margin:"0px 0px 0px 240px" ,
+         style={{width:600,margin:"0px 0px 0px 180px" ,
          borderRadius:"40px" , color :'black' , fii: "#D9D9D9",backgroundColor :"#D9D9D9"}}
          disabled={!editMode}  />
       </Form.Item> 
@@ -259,7 +258,7 @@ const Personal = () => {
          placeholder="Open Friday eg. 10:00 AM - 12:00 PM On Friday" 
          onChange={handleChange}
          value={info.openFriday}
-         style={{width:600,margin:"0px 0px 0px 240px" ,
+         style={{width:600,margin:"0px 0px 0px 180px" ,
          borderRadius:"40px" , color :'black' , fii: "#D9D9D9",backgroundColor :"#D9D9D9"}}
          disabled={!editMode}  />
       </Form.Item> 
@@ -270,7 +269,7 @@ const Personal = () => {
      rules={[{ required: false, message: 'Lesson cost ?' }]}
 >
   <Input prefix={<DollarOutlined />}      placeholder="eg. 50$"  
-  style={{width:600,margin:"0px 0px 0px 240px" ,border: "3px solid #FFFCF2",borderRadius:"40px" , backgroundColor :"#D9D9D9" , color :'black'}}
+  style={{width:600,margin:"0px 0px 0px 180px" ,border: "3px solid #FFFCF2",borderRadius:"40px" , backgroundColor :"#D9D9D9" , color :'black'}}
   disabled/>
 </Form.Item>
 
@@ -279,7 +278,7 @@ const Personal = () => {
         rules={[{ required: false, message: 'info' }]}
       >
         <Input.TextArea placeholder='Write your info' prefix={<InfoCircleOutlined />}
- style={{width:600,margin:"0px 100px 0px 240px" ,
+ style={{width:600,margin:"0px 100px 0px 180px" ,
  borderRadius:"40px" , color :'black' , fii: "#D9D9D9",backgroundColor :"#D9D9D9"}}
         autoSize={true}  
         size={50}  
@@ -308,7 +307,7 @@ const Personal = () => {
       cursor: 'pointer',
       width:'70px',
       height: '30px',
-      margin: '0px 40px 0px 0px'}} 
+      margin: '0px 50px 0px 0px'}} 
        onClick={handleCancel}>Cancel</Button>
           </Row> :
 
@@ -320,7 +319,7 @@ const Personal = () => {
       cursor: 'pointer',
       width:'70px',
       height: '30px',
-      margin: '0 0 0 605px'
+      margin: '0 0 0 490px'
     }} onClick={handleEdit} >Edit</button> }
 
       </Col>

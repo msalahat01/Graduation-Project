@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Row } from "antd";
 import { Card } from "antd";
-import { Avatar, Button, List, Skeleton, message, Space } from "antd";
+import { Button, List, Skeleton, message, Space } from "antd";
 import { EditOutlined, DeleteOutlined } from "@ant-design/icons";
 import { useEffect, useState } from "react";
 import { Input } from "antd";
@@ -15,9 +15,7 @@ import {
 } from "firebase/firestore";
 import { db, auth } from "../firebase";
 import { Scrollbars } from "react-custom-scrollbars";
-import Box from '@mui/material/Box';
 import Rating from '@mui/material/Rating';
-import Typography from '@mui/material/Typography';
 
 const { TextArea } = Input;
 
@@ -185,12 +183,12 @@ for (let i = 0; i < listRating.length; i++ ) {
   return (
     <>
       <Row>
-        <Col span={9}>
+        <Col span={8}>
           <Card
             size="small"
             style={{
               width: 480,
-              margin: "60px 10px 0px 60px",
+              margin: "60px 10px 0px -70px",
               background: "#EB5E28 ",
               color: "white",
               border: "3px solid #FFFCF2",
@@ -232,7 +230,7 @@ for (let i = 0; i < listRating.length; i++ ) {
             style={{
               maxHeight: 420,
               width: 480,
-              margin: "10px 0px 0px 60px",
+              margin: "10px 0px 0px -70px",
               background: "#EB5E28 ",
               color: "white",
               border: "3px solid #FFFCF2",

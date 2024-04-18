@@ -14,7 +14,7 @@ function ForgotPassword() {
   const page = {
     backgroundColor: "#FFFCF2",
     height: "1200px",
-    width: "1920px",
+    width: "100%",
   };
 
   const foot = {
@@ -30,7 +30,7 @@ function ForgotPassword() {
     width: "32%",
     height: "50%",
     right: "34%",
-    top: "19%",
+    top: "17%",
   };
 
   const handleSubmit = async (e) => {
@@ -91,7 +91,7 @@ function ForgotPassword() {
           position: "absolute",
           width: "25%",
           left: "37.5%",
-          top: "260px",
+          top: "240px",
         }}
       >
         Reset Password
@@ -111,7 +111,7 @@ function ForgotPassword() {
           style={{
             position: "absolute",
             left: "0px",
-            top: "62%",
+            top: "56%",
             height: "18%",
             fontSize: "80%",
             borderRadius:"14px"
@@ -129,7 +129,7 @@ function ForgotPassword() {
             borderRadius: "20px",
             position: "absolute",
             left: "14%",
-            top: "140%",
+            top: "135%",
             width: "70%",
             height: "18%",
           }}
@@ -138,8 +138,8 @@ function ForgotPassword() {
         >
           Reset
         </button>
-        <p  style={{color :"black",position: "absolute", left:"1%", top:"36%",fontSize:"17px" ,textAlign:"start"}} >Please enter the email address you would like your password reset information sent to </p>
-        <a  style={{color :"#00002F",position: "absolute", left:"36%", top:"165%",fontSize:"18px"}} href="/Signin">Back To Login</a>
+        <p  style={{color :"black",position: "absolute", left:"1%", top:"30%",fontSize:"17px" ,textAlign:"start"}} >Please enter the email address you would like your password reset information sent to </p>
+        <a  style={{color :"#00002F",position: "absolute", left:"36%", top:"160%",fontSize:"18px"}} href="/Signin">Back To Login</a>
       </form>
       <div>
         <div className="" style={{ ...foot, position: "absolute" }}>

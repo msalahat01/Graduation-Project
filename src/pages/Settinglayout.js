@@ -1,11 +1,7 @@
 import React from 'react'
 import { Layout  } from 'antd';
 import Siderr from'../components/Siderr'
-import { auth } from '../firebase';
-import { FaBorderNone, FaFacebook ,FaTwitter , FaWhatsapp } from "react-icons/fa";
-import {  useNavigate } from 'react-router-dom';
-import { Col, Row } from 'antd';
-import { Avatar, Button, List, Skeleton } from 'antd';
+import { FaFacebook ,FaTwitter , FaWhatsapp } from "react-icons/fa";
 import Upset from "./upset";
 
 
@@ -51,7 +47,7 @@ const year = new Date().getFullYear();
 const page={
   backgroundColor: "#FFFFFF",
   height: "1200px",
-   width: "1920px",
+   width: "100%",
    left:"0%"
 
 }
@@ -67,7 +63,7 @@ function Settinglayout(){
   <Layout  style={{width: '80%'}}>
     <Layout>   
      <Header style={headerStyle}>
-     <img src={require("/home/al-salahat/Downloads/project/src/image/12.png")} style={logoStyle} ></img>
+     <img src={require("../image/12.png")} style={logoStyle} ></img>
      </Header>
       <Content style={contentStyle}>
         <Upset></Upset>
