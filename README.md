@@ -1,0 +1,1 @@
+Utilizing the React JS framework, we've created a Gym management system, with a significant emphasis on JavaScript programming, which we designed by Figma for the user interface. we used Firebase for cloud based database and website hosting.
